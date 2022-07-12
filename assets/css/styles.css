@@ -3,17 +3,82 @@ body {
 }
 
 h1, h2, div p, footer {
-    color: blueviolet;
+    color: rgb(226, 43, 214);
 }
 
-section {
-    
+h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 24px;
 }
 
-pre {
+header p {
+    font-size: 14px;
+    padding-bottom: 18px;
+    text-align: center;
+    width: 850px;
+    margin: 0 auto;
+}
+
+div h2 {
+    border: 3px solid blanchedalmond;
+    border-radius: 5px;
+    width: 175px;
+    padding: 6px;
+    /* position: relative;
+    margin-top: -20px; */
+}
+
+header p, pre {
     color: blanchedalmond;
 }
 
-#flexbox-row {
+footer {
+    text-align: center;
+    padding: 24px;
+}
+
+.grid {
+    /* display: grid;
+    grid-template-rows: 50px 50px 50px; */
     display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    width: 50%;
+}
+/* 
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+} */
+
+.container {
+    border: blanchedalmond dashed 2px;
+    padding: 14px;
+}
+
+.container p {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
+
+.code {
+    background-color: rgb(172, 26, 162);
+    border-radius: 5px;
+}
+
+.code, p {
+    padding: 10px;
 }
