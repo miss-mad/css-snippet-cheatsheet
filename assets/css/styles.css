@@ -43,9 +43,9 @@ footer {
     /* display: grid;
     grid-template-rows: 50px 50px 50px; */
     display: flex;
-    /* justify-content: center; */
+    justify-content: center;
     flex-wrap: wrap;
-    width: 50%;
+    /* width: 50%; */
 }
 /* 
 .row {
@@ -69,10 +69,10 @@ footer {
     padding-bottom: 20px;
 }
 
-.card-header {
+/* .card-header {
     position: relative;
     margin-top: -20px;
-}
+} */
 
 .code {
     background-color: rgb(172, 26, 162);
