@@ -99,3 +99,24 @@ footer {
     top: 20px;
     height: 200px;
 } */
+
+@media screen and (min-width: 768px) and (max-width: 897px) {
+    .box {
+        flex: 0 0 50%;
+    }    
+}
+
+@media screen and (max-width: 515px) {
+    .box {
+        /* width: 25%; */
+    }
+
+    .grid {
+        max-width: 500px;
+        flex: 0 0 auto;
+    }
+
+    header p, h1 {
+        justify-content: center;
+    }
+}
