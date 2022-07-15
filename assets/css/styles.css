@@ -1,9 +1,16 @@
+:root {
+    --ocean: rgb(106, 216, 213);
+    --old-lace: oldlace;
+    --gradient: rgba(232, 102, 236, 1);
+    --ease: all 0.5s ease-in-out;
+}
+
 body {
     background-color: rgb(61, 54, 54);
 }
 
 h1, h2, div p, footer {
-    color: rgb(106, 216, 213);
+    color: var(--ocean);
 }
 
 h1 {
@@ -25,21 +32,21 @@ header p {
 }
 
 div h2 {
-    border: 2px solid oldlace;
+    border: 2px solid var(--old-lace);
     border-radius: 10px 10px 0 0;
     padding: 6px;
     display: flex;
     justify-content: center;
     font-size: 20px;
-    transition: all 0.5s ease-in-out;
+    transition: var(--ease);
 }
 
 div h2:hover {
-    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    box-shadow: inset 0px 0px 8px var(--gradient), 0 0 15px var(--gradient);
 }
 
 header p, pre {
-    color: oldlace;
+    color: var(--old-lace);
 }
 
 footer {
@@ -57,15 +64,15 @@ footer {
     flex-wrap: wrap;
     flex-direction: column;
     margin: 10px;
-    transition: all 0.5s ease-in-out;
+    transition: var(--ease);
 }
 
 .box:hover {
-    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+    box-shadow: inset 0px 0px 8px var(--gradient), 0 0 15px var(--gradient);
 }
 
 .container {
-    border: oldlace dashed 2px;
+    border: var(--old-lace) dashed 2px;
     border-radius: 0 0 10px 10px;
     padding: 14px;
     height: 375px;
@@ -117,6 +124,6 @@ footer {
     }
 
     header p, h1 {
-        justify-content: center;
+        text-align: center;
     }
 }
